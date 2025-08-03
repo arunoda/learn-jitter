@@ -165,7 +165,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 266.0, 159.0, 35.0, 22.0 ],
+					"patching_rect" : [ 304.0, 154.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -253,7 +253,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 558.5, 444.0, 50.0, 22.0 ]
+					"patching_rect" : [ 558.5, 453.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -276,7 +276,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 113.5, 516.0, 340.0, 258.0 ],
+					"patching_rect" : [ 113.5, 516.0, 313.0, 277.0 ],
 					"sync" : 1
 				}
 
@@ -324,8 +324,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 159.0, 159.0, 91.0, 22.0 ],
-					"text" : "read dozer.mov"
+					"patching_rect" : [ 159.0, 159.0, 109.0, 22.0 ],
+					"text" : "read chickens.mp4"
 				}
 
 			}
@@ -466,14 +466,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 281.5, 228.0, 456.0, 228.0, 456.0, 144.0, 478.5, 144.0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -510,7 +502,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -518,7 +510,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -537,6 +529,13 @@
 					"destination" : [ "obj-5", 0 ],
 					"order" : 3,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
