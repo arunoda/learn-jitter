@@ -130,7 +130,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1161.0, 570.0, 33.0, 22.0 ],
-					"text" : "* 40."
+					"text" : "* 70."
 				}
 
 			}
@@ -246,13 +246,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 631.0, 367.0, 203.0, 49.0 ],
-					"text" : "filterdesign @topology butterworth @frequency 300. @order 10 @response highpass"
+					"patching_rect" : [ 631.0, 367.0, 469.0, 22.0 ],
+					"text" : "filterdesign @topology butterworth @frequency 1500. @order 10 @response highpass"
 				}
 
 			}
@@ -283,13 +282,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 631.0, 282.0, 214.0, 49.0 ],
-					"text" : "filterdesign @topology butterworth @frequency 3000. @order 10 @response lowpass"
+					"patching_rect" : [ 633.5, 283.0, 464.0, 22.0 ],
+					"text" : "filterdesign @topology butterworth @frequency 2000. @order 10 @response lowpass"
 				}
 
 			}
@@ -643,19 +641,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"attr" : "frequency",
-					"id" : "obj-32",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 988.0, 282.0, 150.0, 22.0 ]
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -831,16 +816,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 616.5, 274.0, 640.5, 274.0 ],
-					"order" : 1,
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 616.5, 316.5, 640.5, 316.5 ],
+					"midpoints" : [ 616.5, 274.0, 643.0, 274.0 ],
 					"order" : 0,
 					"source" : [ "obj-31", 0 ]
 				}
@@ -849,7 +825,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-32", 0 ]
+					"midpoints" : [ 616.5, 316.5, 640.5, 316.5 ],
+					"order" : 1,
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
