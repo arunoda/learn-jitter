@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 107.0, 1351.0, 826.0 ],
+		"rect" : [ 59.0, 107.0, 1069.0, 826.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,104 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 12,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 637.0, 120.0, 201.0, 167.0 ],
+					"text" : "Has three types of main lights\n\n1. Directional \nonly direction is working\n\n2. Point\nonly the point is working and it's omni directional\n\n3. Spot\nboth point and direction works. We also have spot angle and spot falloff"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 406.0, 281.5, 214.0, 22.0 ],
+					"text" : "jit.gl.light @type point @position -1 1 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 406.0, 88.0, 150.0, 20.0 ],
+					"text" : "Lights"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 55.0, 276.0, 256.0, 33.0 ],
+					"text" : "tripod param makes sure the camera won't rotate across the z axis."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 62.5, 146.0, 241.0, 20.0 ],
+					"text" : "This enables keyboard movements"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 63.0, 213.0, 265.0, 22.0 ],
+					"text" : "jit.anim.drive @ui_listen 1 @speed 3 @ease 0.2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 47.0, 242.0, 219.0, 22.0 ],
+					"text" : "jit.gl.camera @tripod 1 @position 0 0 5."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 47.0, 86.0, 150.0, 20.0 ],
+					"text" : "Camera Object"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 394.0, 81.0, 150.0, 20.0 ],
+					"patching_rect" : [ 392.0, 418.0, 150.0, 20.0 ],
 					"text" : "The sphere object"
 				}
 
@@ -56,7 +149,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.0, 152.0, 273.0, 22.0 ],
+					"patching_rect" : [ 514.0, 489.0, 273.0, 22.0 ],
 					"text" : "loadmess broken_wall/broken_wall_nor_gl_4k.jpg"
 				}
 
@@ -68,7 +161,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 114.0, 256.0, 22.0 ],
+					"patching_rect" : [ 388.0, 451.0, 256.0, 22.0 ],
 					"text" : "loadmess broken_wall/broken_wall_diff_4k.jpg"
 				}
 
@@ -81,7 +174,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 390.0, 400.0, 321.0, 35.0 ],
+					"patching_rect" : [ 388.0, 737.0, 321.0, 35.0 ],
 					"text" : "jit.gl.gridshape bread @shape sphere @scale 0.5 @dim 100 100 @rotatexyz -90 0 0"
 				}
 
@@ -93,7 +186,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 390.0, 270.0, 92.5, 22.0 ],
+					"patching_rect" : [ 388.0, 607.0, 92.5, 22.0 ],
 					"text" : "jit.gl.material"
 				}
 
@@ -105,7 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 516.0, 188.0, 75.0, 22.0 ],
+					"patching_rect" : [ 514.0, 525.0, 75.0, 22.0 ],
 					"text" : "load_texture"
 				}
 
@@ -117,7 +210,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 64.0, 222.0, 75.0, 22.0 ],
+					"patching_rect" : [ 62.0, 559.0, 75.0, 22.0 ],
 					"text" : "load_texture"
 				}
 
@@ -129,7 +222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 49.0, 152.0, 75.0, 22.0 ],
+					"patching_rect" : [ 47.0, 489.0, 75.0, 22.0 ],
 					"text" : "load_texture"
 				}
 
@@ -141,7 +234,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 390.0, 158.0, 75.0, 22.0 ],
+					"patching_rect" : [ 388.0, 495.0, 75.0, 22.0 ],
 					"text" : "load_texture"
 				}
 
@@ -152,7 +245,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 89.0, 150.0, 20.0 ],
+					"patching_rect" : [ 47.0, 375.0, 150.0, 20.0 ],
 					"text" : "The floor object"
 				}
 
@@ -164,7 +257,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 188.0, 259.0, 22.0 ],
+					"patching_rect" : [ 62.0, 525.0, 259.0, 22.0 ],
 					"text" : "loadmess brick_floor/brick_floor_nor_dx_4k.jpg"
 				}
 
@@ -176,7 +269,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 118.0, 238.0, 22.0 ],
+					"patching_rect" : [ 47.0, 404.0, 238.0, 22.0 ],
 					"text" : "loadmess brick_floor/brick_floor_diff_4k.jpg"
 				}
 
@@ -188,7 +281,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 49.0, 270.0, 92.5, 22.0 ],
+					"patching_rect" : [ 47.0, 607.0, 92.5, 22.0 ],
 					"text" : "jit.gl.material"
 				}
 
@@ -196,13 +289,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 49.0, 405.0, 274.0, 35.0 ],
-					"text" : "jit.gl.gridshape bread @shape cube @scale 1. 0.1 1. @position 0 -0.8 0"
+					"patching_rect" : [ 47.0, 742.0, 389.0, 22.0 ],
+					"text" : "jit.gl.gridshape bread @shape cube @scale 4. 0.1 4. @position 0 -0.8 0"
 				}
 
 			}
@@ -215,6 +307,96 @@
 					"outlettype" : [ "jit_matrix", "bang", "" ],
 					"patching_rect" : [ 49.0, 24.0, 209.0, 22.0 ],
 					"text" : "jit.world bread @enable 1 @floating 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 47.0, 120.0, 68.0, 22.0 ],
+					"text" : "anim_reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "type",
+					"id" : "obj-38",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 406.0, 253.0, 199.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "direction",
+					"id" : "obj-39",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 406.0, 224.0, 222.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "position",
+					"id" : "obj-41",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 47.0, 184.0, 238.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "spot_angle",
+					"id" : "obj-42",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 406.0, 160.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "spot_falloff",
+					"id" : "obj-43",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 406.0, 132.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "position",
+					"id" : "obj-44",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 406.0, 194.0, 207.0, 22.0 ]
 				}
 
 			}
@@ -279,6 +461,62 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-44", 0 ]
 				}
 
 			}
