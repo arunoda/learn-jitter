@@ -149,8 +149,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 103.0, 419.0, 407.0, 22.0 ],
-					"text" : "jit.gl.texture @file ~/data/learn/jitter/3d/brick_floor/brick_floor_nor_gl_4k.jpg"
+					"patching_rect" : [ 103.0, 419.0, 400.0, 22.0 ],
+					"text" : "jit.gl.texture @file ~/data/opt/textures/brick_floor/brick_floor_nor_gl_4k.jpg"
 				}
 
 			}
@@ -173,8 +173,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 54.0, 281.0, 389.0, 22.0 ],
-					"text" : "jit.gl.texture @file ~/data/learn/jitter/3d/brick_floor/brick_floor_diff_4k.jpg"
+					"patching_rect" : [ 54.0, 281.0, 382.0, 22.0 ],
+					"text" : "jit.gl.texture @file ~/data/opt/textures/brick_floor/brick_floor_diff_4k.jpg"
 				}
 
 			}
