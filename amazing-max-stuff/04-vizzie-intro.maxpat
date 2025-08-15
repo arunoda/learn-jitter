@@ -57,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 354.0, 230.5, 150.0, 74.0 ],
+					"patching_rect" : [ 354.0, 230.5, 152.0, 74.0 ],
 					"text" : "There are some audio related modules too.\n\nIt helps our life by trying to create them our selves."
 				}
 
@@ -418,7 +418,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-25", 1 ]
+					"source" : [ "obj-25", 2 ]
 				}
 
 			}
