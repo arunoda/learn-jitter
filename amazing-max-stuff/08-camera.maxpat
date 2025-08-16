@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 57.0, 208.0, 315.0, 33.0 ],
+					"text" : "locklook allows us to force rotating the camera around the lookat positon (which is very useful in dev)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"linecount" : 12,
 					"maxclass" : "comment",
@@ -80,7 +92,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 276.0, 256.0, 33.0 ],
+					"patching_rect" : [ 46.5, 356.0, 256.0, 33.0 ],
 					"text" : "tripod param makes sure the camera won't rotate across the z axis."
 				}
 
@@ -103,7 +115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 63.0, 213.0, 265.0, 22.0 ],
+					"patching_rect" : [ 46.5, 296.0, 265.0, 22.0 ],
 					"text" : "jit.anim.drive @ui_listen 1 @speed 3 @ease 0.2"
 				}
 
@@ -115,8 +127,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 47.0, 242.0, 219.0, 22.0 ],
-					"text" : "jit.gl.camera @tripod 1 @position 0 0 5."
+					"patching_rect" : [ 46.5, 323.0, 288.0, 22.0 ],
+					"text" : "jit.gl.camera @tripod 1 @position 0 0 5. @locklook 1"
 				}
 
 			}
@@ -245,7 +257,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 47.0, 375.0, 150.0, 20.0 ],
+					"patching_rect" : [ 46.5, 418.0, 150.0, 20.0 ],
 					"text" : "The floor object"
 				}
 
@@ -269,7 +281,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.0, 404.0, 238.0, 22.0 ],
+					"patching_rect" : [ 46.5, 447.0, 238.0, 22.0 ],
 					"text" : "loadmess brick_floor/brick_floor_diff_4k.jpg"
 				}
 
@@ -400,6 +412,32 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "lookat",
+					"id" : "obj-7",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 46.5, 264.0, 238.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "locklook",
+					"id" : "obj-11",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 46.5, 239.0, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -412,6 +450,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -517,6 +562,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
