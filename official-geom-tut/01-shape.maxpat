@@ -14,12 +14,23 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 161.0, 133.0, 221.0, 20.0 ],
+					"text" : "This is the no of divisions we can do."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 181.0, 243.0, 255.0, 47.0 ],
+					"patching_rect" : [ 176.0, 288.0, 255.0, 47.0 ],
 					"text" : "Converting geom data into a matrix\n(we don't need to generate normals as we have already have them)"
 				}
 
@@ -31,7 +42,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 152.0, 216.0, 33.0 ],
+					"patching_rect" : [ 136.0, 197.0, 216.0, 33.0 ],
 					"text" : "We can generate vertex normals to smooth out the triangles"
 				}
 
@@ -125,7 +136,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 97.0, 344.0, 92.5, 22.0 ],
+					"patching_rect" : [ 92.0, 389.0, 92.5, 22.0 ],
 					"text" : "jit.gl.pbr"
 				}
 
@@ -149,7 +160,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 40.0, 377.0, 287.0, 22.0 ],
+					"patching_rect" : [ 35.0, 422.0, 287.0, 22.0 ],
 					"text" : "jit.gl.mesh bread @draw_mode triangles @scale 0.3"
 				}
 
@@ -161,7 +172,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 40.0, 293.0, 195.0, 22.0 ],
+					"patching_rect" : [ 35.0, 338.0, 195.0, 22.0 ],
 					"text" : "jit.geom.tomatrix @auto_normals 0"
 				}
 
@@ -173,7 +184,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_geometry", "" ],
-					"patching_rect" : [ 40.25, 219.0, 165.0, 22.0 ],
+					"patching_rect" : [ 36.0, 264.0, 165.0, 22.0 ],
 					"text" : "jit.geom.normgen @type face"
 				}
 
@@ -185,7 +196,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_geometry", "" ],
-					"patching_rect" : [ 40.0, 135.0, 87.0, 22.0 ],
+					"patching_rect" : [ 36.0, 185.0, 87.0, 22.0 ],
 					"text" : "jit.geom.shape"
 				}
 
@@ -212,7 +223,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 68.25, 192.0, 150.0, 22.0 ]
+					"patching_rect" : [ 64.0, 237.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -225,12 +236,32 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 193.0, 347.0, 214.0, 22.0 ]
+					"patching_rect" : [ 188.0, 392.0, 214.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "icodivisions",
+					"id" : "obj-1",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 69.0, 155.0, 150.0, 22.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-11", 0 ]
