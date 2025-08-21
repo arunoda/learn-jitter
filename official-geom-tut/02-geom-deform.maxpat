@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 140.201008200645447, 371.929821014404297, 196.48241651058197, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "This is a very simpe twist deform operation."
 				}
 
@@ -116,8 +115,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 30.0789475440979, 625.438590526580811, 280.0, 22.0 ],
-					"text" : "jit.gl.mesh bread @draw_mode triangles @scale 2."
+					"patching_rect" : [ 30.0789475440979, 625.438590526580811, 287.0, 22.0 ],
+					"text" : "jit.gl.mesh bread @draw_mode triangles @scale 0.2"
 				}
 
 			}
@@ -249,7 +248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 48.5, 456.140346527099609, 150.0, 22.0 ]
+					"patching_rect" : [ 48.5, 458.0, 150.0, 22.0 ]
 				}
 
 			}
