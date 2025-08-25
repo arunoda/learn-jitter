@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 295.0, 278.0, 47.0 ],
+					"patching_rect" : [ 271.0, 295.0, 281.0, 47.0 ],
 					"text" : "When we do the remeshing, it's gonna distrote the texture coordinates and we need to use something else instead"
 				}
 
@@ -98,25 +98,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 441.0, 599.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 441.0, 634.0, 24.0, 24.0 ]
+					"patching_rect" : [ 576.0, 613.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -199,7 +187,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 68.0, 26.0, 58.0, 22.0 ],
+					"patching_rect" : [ 68.0, 14.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -212,7 +200,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 68.0, 63.0, 24.0, 24.0 ]
+					"patching_rect" : [ 68.0, 51.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -441,13 +429,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
@@ -548,7 +529,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"midpoints" : [ 77.5, 90.9453125, 585.5, 90.9453125 ],
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-8", 0 ]
 				}
 
