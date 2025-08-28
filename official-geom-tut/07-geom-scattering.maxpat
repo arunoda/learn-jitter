@@ -224,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 576.0, 551.0, 127.0, 33.0 ],
+					"patching_rect" : [ 576.0, 551.0, 130.0, 33.0 ],
 					"text" : "This is for the material loading"
 				}
 
