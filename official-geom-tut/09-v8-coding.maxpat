@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1444.0, 848.0 ],
+		"rect" : [ 34.0, 100.0, 1044.0, 848.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -36,7 +36,7 @@
 					"patching_rect" : [ 751.0, 22.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
+							"parameter_initial" : [ 0.03 ],
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[3]",
@@ -63,7 +63,7 @@
 					"patching_rect" : [ 817.0, 22.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
+							"parameter_initial" : [ 0.3 ],
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[2]",
@@ -90,7 +90,7 @@
 					"patching_rect" : [ 891.0, 22.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
+							"parameter_initial" : [ 1.5 ],
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[1]",
@@ -112,7 +112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_geometry", "" ],
-					"patching_rect" : [ 105.0, 178.0, 105.0, 22.0 ],
+					"patching_rect" : [ 68.0, 178.0, 105.0, 22.0 ],
 					"text" : "jit.geom.subdivide"
 				}
 
@@ -184,8 +184,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 586.0, 206.0, 106.0, 22.0 ],
-					"text" : "jit.mo.join 3 10000"
+					"patching_rect" : [ 578.0, 206.0, 106.0, 22.0 ],
+					"text" : "jit.mo.join 3 50000"
 				}
 
 			}
@@ -244,8 +244,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 437.0, 430.0, 377.0, 22.0 ],
-					"text" : "jit.gl.mesh bread @draw_mode lines @scale 0.5 @gl_color 1. 1. 1. 1."
+					"patching_rect" : [ 437.0, 430.0, 466.0, 22.0 ],
+					"text" : "jit.gl.mesh bread @draw_mode lines @scale 0.5 @gl_color 1. 1. 1. 1. @line_width 0.1"
 				}
 
 			}
@@ -439,7 +439,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -463,7 +463,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"midpoints" : [ 619.5, 181.0, 639.0, 181.0 ],
+					"midpoints" : [ 619.5, 181.0, 631.0, 181.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -495,7 +495,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 2 ],
-					"midpoints" : [ 700.5, 197.5, 682.5, 197.5 ],
+					"midpoints" : [ 700.5, 197.5, 674.5, 197.5 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -518,7 +518,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 521.5, 163.0, 595.5, 163.0 ],
+					"midpoints" : [ 521.5, 163.0, 587.5, 163.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -597,6 +597,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -640,7 +647,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
-					"midpoints" : [ 595.5, 352.94921875, 457.0, 352.94921875 ],
+					"midpoints" : [ 587.5, 352.94921875, 457.0, 352.94921875 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
