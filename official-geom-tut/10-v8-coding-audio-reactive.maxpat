@@ -2310,6 +2310,19 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "iterations",
+					"id" : "obj-3",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 164.0, 148.0, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2482,6 +2495,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-35", 0 ]
 				}
@@ -2611,7 +2631,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.*.mxo",
+				"name" : "jit.+.mxo",
 				"type" : "iLaX"
 			}
 , 			{
